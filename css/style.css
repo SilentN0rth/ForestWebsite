@@ -122,17 +122,16 @@ body {
 .main {
   color: #111;
 }
+.main__title {
+  margin: 0.9em 0;
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
 .main .aboutus {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.main .aboutus__title {
-  margin: 1.6em 0 0.6em 0;
-  font-size: 2rem;
-  font-weight: 300;
-  text-transform: uppercase;
 }
 .main .aboutus__card {
   display: flex;
@@ -140,7 +139,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 0.8em;
-  margin: 1em;
+  margin: 0 1em;
   border-radius: 5px;
   background-color: #f3f3f3;
 }
@@ -157,4 +156,32 @@ body {
   text-align: center;
   padding: 1em 0 0.8em 0;
   font-size: 1.6rem;
+}
+.main .info {
+  background-image: url("../img/girl-5785590_1920.jpg");
+  position: relative;
+  padding: 2em 1em;
+  background-size: cover;
+  background-position: center;
+  z-index: 5;
+}
+.main .info__box {
+  padding: 1.2em;
+  text-align: center;
+  border: 1px solid #f3f3f3;
+  color: #f3f3f3;
+}
+.main .info__box-title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  z-index: 10;
+}
+.main .info__shadow {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -5;
 }/*# sourceMappingURL=style.css.map */

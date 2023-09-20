@@ -135,25 +135,25 @@ body {
 .main {
 	color: $black;
 
+	&__title {
+		margin: 0.9em 0;
+		font-size: 2rem;
+		font-weight: 300;
+		text-align: center;
+		text-transform: uppercase;
+	}
+
 	.aboutus {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		justify-content: center;
 
-		&__title {
-			margin: 1.6em 0 0.6em 0;
-			font-size: 2rem;
-			font-weight: 300;
-			text-transform: uppercase;
-		}
 		&__card {
 			display: flex;
 			flex-direction: row;
 			flex-direction: column; // row
 			align-items: center; // center
 			padding: 0.8em;
-			margin: 1em;
+			margin: 0 1em;
 			border-radius: 5px;
 			background-color: $light-gray;
 			&-img {
@@ -170,6 +170,34 @@ body {
 				padding: 1em 0 0.8em 0;
 				font-size: 1.6rem;
 			}
+		}
+	}
+	.info {
+		background-image: url('../img/girl-5785590_1920.jpg');
+		position: relative;
+		padding: 2em 1em;
+		background-size: cover;
+		background-position: center;
+		z-index: 5;
+		&__box {
+			padding: 1.2em;
+			text-align: center;
+			border: 1px solid $light-gray;
+			color: $light-gray;
+			&-title {
+				font-size: 1.5rem;
+				font-weight: 400;
+				z-index: 10;
+			}
+		}
+		&__shadow {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background-color: rgb(0, 0, 0, 0.6);
+			z-index: -5;
 		}
 	}
 }
