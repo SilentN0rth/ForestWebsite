@@ -1,0 +1,84 @@
+@use './colors' as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1200px;
+}
+
+.nav {
+	font-family: 'Raleway', sans-serif;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	&--active {
+		.nav__logo {
+			display: none;
+		}
+		.nav__items {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			font-size: 2rem;
+			height: 100vh;
+			.nav__item {
+				padding: 0;
+				height: 100%;
+			}
+		}
+	}
+
+	&__logo {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		&-text {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			color: $black;
+			font-size: 2rem;
+			font-weight: 500;
+		}
+	}
+
+	&__items {
+		display: flex;
+		// display: none;
+	}
+
+	&__item {
+		padding: 2em 2.5em;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-decoration: none;
+		color: $black;
+		text-transform: uppercase;
+		transition: color 0.3s, background-color 0.3s;
+		&--active,
+		&:hover {
+			color: $white;
+			background-color: $black;
+		}
+	}
+	&__hamburger {
+		display: none;
+		// display: flex;
+		align-items: center;
+		&-btn {
+			background: none;
+			border: none;
+			font-size: 1.8rem;
+			padding: 1em 2em;
+			cursor: pointer;
+		}
+	}
+}
