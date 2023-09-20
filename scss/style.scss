@@ -6,6 +6,10 @@
 	padding: 0;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 }
@@ -14,6 +18,15 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	max-width: 1200px;
+}
+
+.logo-text {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: $black;
+	font-size: 2rem;
+	font-weight: 500;
 }
 
 .btn {
@@ -67,14 +80,6 @@ body {
 		align-items: center;
 		justify-content: center;
 		font-size: 1.5rem;
-		&-text {
-			display: flex;
-			align-items: center;
-			text-decoration: none;
-			color: $black;
-			font-size: 2rem;
-			font-weight: 500;
-		}
 	}
 
 	&__items {
@@ -238,7 +243,7 @@ body {
 
 		&__card {
 			width: 240px;
-			padding: 2em 2.5em;
+			padding: 2em 2em;
 			background-color: #fff;
 			box-shadow: 1px 1px 7px -3px rgb(12, 12, 15);
 			border-radius: 7px;
@@ -268,7 +273,7 @@ body {
 				width: 100%;
 				padding: 0.2em 0;
 				display: flex;
-				font-size: 0.8rem;
+				font-size: 0.9rem;
 				&--disabled {
 					opacity: 0.6;
 				}
@@ -279,3 +284,69 @@ body {
 		}
 	}
 }
+
+.footer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	background-color: $light-gray;
+	.logo-text {
+		font-size: 2.5rem; // > mobile
+		display: none;
+	}
+	&__info {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	&__box {
+		text-align: center;
+		padding: 2em;
+		display: flex;
+		flex-direction: column;
+		&-title {
+			margin-bottom: 0.6em;
+			font-size: 1.2rem;
+			font-weight: bold;
+		}
+	}
+	&__link {
+		margin: 0.6em 0;
+		text-decoration: none;
+		color: $black;
+		transition: color 0.3s;
+		&:hover {
+			color: $gray;
+		}
+	}
+	&__copyright {
+		padding: 2em 0;
+		text-align: center;
+		border-top: 1px solid $black;
+		width: 100%;
+	}
+}
+
+// <footer class="footer">
+//         <div class="footer__logo"></div>
+//         <div class="footer__info">
+//             <div class="footer__box">
+//                 <p class="footer_box-title">O nas</p>
+//                 <a href="#" class="footer__link">Historia</a>
+//                 <a href="#" class="footer__link">Parki</a>
+//                 <a href="#" class="footer__link">Opinie</a>
+//             </div>
+//             <div class="footer__box">
+//                 <p class="footer_box-title">Nasza firma</p>
+//                 <a href="#" class="footer__link">Praca</a>
+//                 <a href="#" class="footer__link">Kadry</a>
+//                 <a href="#" class="footer__link">Zarząd</a>
+//             </div>
+//             <div class="footer__box">
+//                 <p class="footer_box-title">Dokumenty</p>
+//                 <a href="#" class="footer__link">Wnioski</a>
+//                 <a href="#" class="footer__link">Rezerwacje</a>
+//             </div>
+//         </div>
+//     </footer>

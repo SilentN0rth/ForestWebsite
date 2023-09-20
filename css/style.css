@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
 }
@@ -12,6 +16,15 @@ body {
   margin: 0 auto;
   width: 100%;
   max-width: 1200px;
+}
+
+.logo-text {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #111;
+  font-size: 2rem;
+  font-weight: 500;
 }
 
 .btn {
@@ -62,14 +75,6 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-}
-.nav__logo-text {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #111;
-  font-size: 2rem;
-  font-weight: 500;
 }
 .nav__items {
   display: flex;
@@ -221,7 +226,7 @@ body {
 }
 .main .offers__card {
   width: 240px;
-  padding: 2em 2.5em;
+  padding: 2em 2em;
   background-color: #fff;
   box-shadow: 1px 1px 7px -3px rgb(12, 12, 15);
   border-radius: 7px;
@@ -249,11 +254,54 @@ body {
   width: 100%;
   padding: 0.2em 0;
   display: flex;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 .main .offers__card-item--disabled {
   opacity: 0.6;
 }
 .main .offers__card-item img {
   margin-right: 0.5em;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f3f3f3;
+}
+.footer .logo-text {
+  font-size: 2.5rem;
+  display: none;
+}
+.footer__info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.footer__box {
+  text-align: center;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.footer__box-title {
+  margin-bottom: 0.6em;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.footer__link {
+  margin: 0.6em 0;
+  text-decoration: none;
+  color: #111;
+  transition: color 0.3s;
+}
+.footer__link:hover {
+  color: #6e6e6e;
+}
+.footer__copyright {
+  padding: 2em 0;
+  text-align: center;
+  border-top: 1px solid #111;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
