@@ -82,13 +82,9 @@ body {
   cursor: pointer;
 }
 
-.header {
-  position: relative;
-  color: #ddd;
-}
 .header__img {
-  padding: 15em 0;
-  position: absolute;
+  height: 100dvh;
+  position: relative;
   top: 0;
   right: 0;
   left: 0;
@@ -100,9 +96,8 @@ body {
 .header__shadow {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: -5;
 }
@@ -113,9 +108,8 @@ body {
   top: 50%;
   right: 50%;
   translate: 50% -30%;
-  display: flex;
-  flex-direction: column;
   z-index: 10;
+  color: #ddd;
 }
 .header__title {
   margin-top: 0.3em;
@@ -123,4 +117,44 @@ body {
 }
 .header__title-p {
   font-size: 1.4rem;
+}
+
+.main {
+  color: #111;
+}
+.main .aboutus {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main .aboutus__title {
+  margin: 1.6em 0 0.6em 0;
+  font-size: 2rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.main .aboutus__card {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.8em;
+  margin: 1em;
+  border-radius: 5px;
+  background-color: #f3f3f3;
+}
+.main .aboutus__card-img {
+  width: 100%;
+  border-radius: 5px;
+}
+.main .aboutus__card-text {
+  display: flex;
+  flex-direction: column;
+  text-align: justify;
+}
+.main .aboutus__card-title {
+  text-align: center;
+  padding: 1em 0 0.8em 0;
+  font-size: 1.6rem;
 }/*# sourceMappingURL=style.css.map */
