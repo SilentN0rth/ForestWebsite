@@ -60,6 +60,9 @@ body {
   background-color: rgb(255, 255, 255);
   border-bottom: 2px solid #111;
 }
+.nav--active {
+  padding: 0;
+}
 .nav--active .nav__logo {
   display: none;
 }
@@ -73,6 +76,9 @@ body {
 .nav--active .nav__items .nav__item {
   padding: 0;
   height: 100%;
+}
+.nav--active .nav__hamburger {
+  display: none;
 }
 .nav__logo {
   display: flex;
