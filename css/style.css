@@ -23,7 +23,7 @@ body {
   align-items: center;
   text-decoration: none;
   color: #111;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 500;
 }
 
@@ -42,6 +42,8 @@ body {
 .btn--active, .btn:hover {
   background-color: #2ade72;
   box-shadow: 2px 2px 10px 0.5px #2ade72;
+}
+.btn:hover {
   scale: 1.05;
 }
 
@@ -52,9 +54,11 @@ body {
   left: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0 1em;
   z-index: 20;
   background-color: rgb(255, 255, 255);
+  border-bottom: 2px solid #111;
 }
 .nav--active .nav__logo {
   display: none;
@@ -74,10 +78,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
 }
 .nav__items {
-  display: flex;
+  display: none;
 }
 .nav__item {
   padding: 2em 2.5em;
@@ -94,14 +97,14 @@ body {
   background-color: #111;
 }
 .nav__hamburger {
-  display: none;
+  display: flex;
   align-items: center;
 }
 .nav__hamburger-btn {
   background: none;
   border: none;
   font-size: 1.8rem;
-  padding: 1em 2em;
+  padding: 1em 1em;
   cursor: pointer;
 }
 
@@ -146,7 +149,7 @@ body {
   color: #111;
 }
 .main__title {
-  margin: 0.9em 0;
+  margin: 1.4em 0 0.9em 0;
   font-size: 2rem;
   font-weight: 300;
   text-align: center;
@@ -156,30 +159,23 @@ body {
   display: flex;
   flex-direction: column;
   margin-bottom: 2em;
+  padding: 0 2em;
 }
 .main .aboutus__card {
   display: flex;
-  flex-direction: row;
   flex-direction: column;
-  align-items: center;
-  padding: 0.8em;
-  margin: 0 1em;
-  border-radius: 5px;
-  background-color: #f3f3f3;
 }
 .main .aboutus__card-img {
   width: 100%;
   border-radius: 5px;
 }
-.main .aboutus__card-text {
-  display: flex;
-  flex-direction: column;
-  text-align: justify;
-}
 .main .aboutus__card-title {
-  text-align: center;
-  padding: 1em 0 0.8em 0;
-  font-size: 1.6rem;
+  padding: 0.4em 0;
+  font-size: 1.2rem;
+}
+.main .aboutus__card-desc {
+  color: #6e6e6e;
+  text-align: justify;
 }
 .main .info {
   background-image: url("../img/girl-5785590_1920.jpg");
@@ -187,6 +183,7 @@ body {
   padding: 2em 1em;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   z-index: 5;
 }
 .main .info__box {
@@ -196,7 +193,7 @@ body {
   color: #f3f3f3;
 }
 .main .info__box-title {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: 400;
   z-index: 10;
 }
@@ -210,23 +207,23 @@ body {
   z-index: -5;
 }
 .main .offers {
-  text-align: center;
+  margin: 0.5em;
 }
 .main .offers__desc {
+  margin-bottom: 1em;
+  text-align: center;
   font-size: 1.1rem;
 }
 .main .offers__cards {
-  margin: 2em;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
   justify-content: center;
-  gap: 1.5em;
 }
 .main .offers__card {
-  width: 240px;
-  padding: 2em 2em;
+  width: 280px;
+  margin: 1em;
+  padding: 2em;
+  text-align: center;
   background-color: #fff;
   box-shadow: 1px 1px 7px -3px rgb(12, 12, 15);
   border-radius: 7px;
@@ -236,31 +233,31 @@ body {
   scale: 1.05;
 }
 .main .offers__card-title {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
 }
 .main .offers__card-price {
-  padding: 0.3em;
-  font-size: 2.1rem;
+  padding: 0.2em 0;
+  font-size: 2rem;
   font-weight: bold;
 }
 .main .offers__card-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 1em;
+  padding: 0.4em 0;
   list-style: none;
 }
 .main .offers__card-item {
-  width: 100%;
-  padding: 0.2em 0;
   display: flex;
-  font-size: 0.9rem;
+  align-items: center;
+  font-size: 1rem;
+  line-height: 25px;
+}
+.main .offers__card-item img {
+  margin-right: 0.3em;
 }
 .main .offers__card-item--disabled {
   opacity: 0.6;
 }
-.main .offers__card-item img {
-  margin-right: 0.5em;
+.main .offers__card .btn {
+  margin-top: 1em;
 }
 
 .footer {
@@ -268,10 +265,10 @@ body {
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  padding-top: 1em;
   background-color: #f3f3f3;
 }
 .footer .logo-text {
-  font-size: 2.5rem;
   display: none;
 }
 .footer__info {
@@ -281,7 +278,7 @@ body {
 }
 .footer__box {
   text-align: center;
-  padding: 2em;
+  padding: 1em 2em;
   display: flex;
   flex-direction: column;
 }
@@ -304,4 +301,65 @@ body {
   text-align: center;
   border-top: 1px solid #111;
   width: 100%;
+}
+
+@media (min-width: 576px) {
+  .main .info {
+    padding: 5em 1em;
+  }
+  .main .aboutus__card-title {
+    padding: 0.8em 0;
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 768px) {
+  .nav__logo {
+    display: flex;
+  }
+  .nav__items {
+    display: flex;
+  }
+  .nav__hamburger {
+    display: none;
+  }
+  .header__img {
+    height: 50dvh;
+  }
+  .main .aboutus__card {
+    flex-direction: row;
+  }
+  .main .aboutus__card-img {
+    width: 50%;
+  }
+  .main .aboutus__card-text {
+    margin-left: 1em;
+  }
+  .main .aboutus__card-title {
+    padding: 0 0 0.5em 0;
+    font-size: 1.6rem;
+  }
+  .main .aboutus__card-desc {
+    line-height: 1.5em;
+  }
+  .footer__logo {
+    margin-right: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .logo-text {
+    display: flex;
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .main .aboutus__card-text {
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+  }
+  .main .aboutus__card-desc {
+    line-height: 2em;
+    font-size: 1.05rem;
+  }
 }/*# sourceMappingURL=style.css.map */

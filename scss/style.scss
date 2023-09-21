@@ -25,7 +25,7 @@ body {
 	align-items: center;
 	text-decoration: none;
 	color: $black;
-	font-size: 2rem;
+	font-size: 1.5rem;
 	font-weight: 500;
 }
 
@@ -44,6 +44,8 @@ body {
 	&:hover {
 		background-color: $green;
 		box-shadow: 2px 2px 10px 0.5px #2ade72;
+	}
+	&:hover {
 		scale: 1.05;
 	}
 }
@@ -55,9 +57,11 @@ body {
 	left: 0;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;
+	padding: 0 1em;
 	z-index: 20;
 	background-color: rgba(255, 255, 255);
+	border-bottom: 2px solid $black;
 	&--active {
 		.nav__logo {
 			display: none;
@@ -79,12 +83,10 @@ body {
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-size: 1.5rem;
 	}
 
 	&__items {
-		display: flex;
-		// display: none;
+		display: none;
 	}
 
 	&__item {
@@ -103,14 +105,13 @@ body {
 		}
 	}
 	&__hamburger {
-		display: none;
-		// display: flex;
+		display: flex;
 		align-items: center;
 		&-btn {
 			background: none;
 			border: none;
 			font-size: 1.8rem;
-			padding: 1em 2em;
+			padding: 1em 1em;
 			cursor: pointer;
 		}
 	}
@@ -160,7 +161,7 @@ body {
 	color: $black;
 
 	&__title {
-		margin: 0.9em 0;
+		margin: 1.4em 0 0.9em 0;
 		font-size: 2rem;
 		font-weight: 300;
 		text-align: center;
@@ -171,28 +172,24 @@ body {
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 2em;
+		padding: 0 2em;
+
 		&__card {
 			display: flex;
-			flex-direction: row;
-			flex-direction: column; // row
-			align-items: center; // center
-			padding: 0.8em;
-			margin: 0 1em;
-			border-radius: 5px;
-			background-color: $light-gray;
+			flex-direction: column;
 			&-img {
 				width: 100%;
 				border-radius: 5px;
 			}
-			&-text {
-				display: flex;
-				flex-direction: column;
-				text-align: justify;
-			}
+
 			&-title {
-				text-align: center;
-				padding: 1em 0 0.8em 0;
-				font-size: 1.6rem;
+				padding: 0.4em 0;
+				font-size: 1.2rem;
+			}
+
+			&-desc {
+				color: $gray;
+				text-align: justify;
 			}
 		}
 	}
@@ -202,6 +199,7 @@ body {
 		padding: 2em 1em;
 		background-size: cover;
 		background-position: center;
+		background-attachment: fixed;
 		z-index: 5;
 		&__box {
 			padding: 1.2em;
@@ -209,7 +207,7 @@ body {
 			border: 1px solid $light-gray;
 			color: $light-gray;
 			&-title {
-				font-size: 1.5rem;
+				font-size: 2rem;
 				font-weight: 400;
 				z-index: 10;
 			}
@@ -225,25 +223,24 @@ body {
 		}
 	}
 	.offers {
-		text-align: center;
+		margin: 0.5em;
 		&__desc {
+			margin-bottom: 1em;
+			text-align: center;
 			font-size: 1.1rem;
 		}
-
 		&__cards {
-			margin: 2em;
 			display: flex;
-			flex-direction: row;
 			flex-wrap: wrap;
-
-			align-items: center;
 			justify-content: center;
-			gap: 1.5em;
 		}
 
 		&__card {
-			width: 240px;
-			padding: 2em 2em;
+			width: 280px;
+			// gap:em;
+			margin: 1em;
+			padding: 2em;
+			text-align: center;
 			background-color: #fff;
 			box-shadow: 1px 1px 7px -3px rgb(12, 12, 15);
 			border-radius: 7px;
@@ -252,34 +249,33 @@ body {
 				scale: 1.05;
 			}
 			&-title {
-				font-size: 1.4rem;
+				font-size: 1.6rem;
 			}
 
 			&-price {
-				padding: 0.3em;
-				font-size: 2.1rem;
+				padding: 0.2em 0;
+				font-size: 2rem;
 				font-weight: bold;
 			}
-
 			&-list {
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				margin-bottom: 1em;
+				padding: 0.4em 0;
 				list-style: none;
 			}
 
 			&-item {
-				width: 100%;
-				padding: 0.2em 0;
 				display: flex;
-				font-size: 0.9rem;
+				align-items: center;
+				font-size: 1rem;
+				line-height: 25px;
+				img {
+					margin-right: 0.3em;
+				}
 				&--disabled {
 					opacity: 0.6;
 				}
-				img {
-					margin-right: 0.5em;
-				}
+			}
+			.btn {
+				margin-top: 1em;
 			}
 		}
 	}
@@ -290,9 +286,9 @@ body {
 	justify-content: space-around;
 	align-items: center;
 	flex-direction: column;
+	padding-top: 1em;
 	background-color: $light-gray;
 	.logo-text {
-		font-size: 2.5rem; // > mobile
 		display: none;
 	}
 	&__info {
@@ -302,7 +298,7 @@ body {
 	}
 	&__box {
 		text-align: center;
-		padding: 2em;
+		padding: 1em 2em;
 		display: flex;
 		flex-direction: column;
 		&-title {
@@ -328,25 +324,94 @@ body {
 	}
 }
 
-// <footer class="footer">
-//         <div class="footer__logo"></div>
-//         <div class="footer__info">
-//             <div class="footer__box">
-//                 <p class="footer_box-title">O nas</p>
-//                 <a href="#" class="footer__link">Historia</a>
-//                 <a href="#" class="footer__link">Parki</a>
-//                 <a href="#" class="footer__link">Opinie</a>
-//             </div>
-//             <div class="footer__box">
-//                 <p class="footer_box-title">Nasza firma</p>
-//                 <a href="#" class="footer__link">Praca</a>
-//                 <a href="#" class="footer__link">Kadry</a>
-//                 <a href="#" class="footer__link">Zarząd</a>
-//             </div>
-//             <div class="footer__box">
-//                 <p class="footer_box-title">Dokumenty</p>
-//                 <a href="#" class="footer__link">Wnioski</a>
-//                 <a href="#" class="footer__link">Rezerwacje</a>
-//             </div>
-//         </div>
-//     </footer>
+@media (min-width: 576px) {
+	.main {
+		.offers {
+			// margin: 0;
+		}
+		.info {
+			padding: 5em 1em;
+		}
+		.aboutus {
+			&__card {
+				&-title {
+					padding: 0.8em 0;
+					font-size: 1.3rem;
+				}
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	.nav {
+		&__logo {
+			display: flex;
+		}
+		&__items {
+			display: flex;
+			// display: none;
+		}
+		&__hamburger {
+			display: none;
+		}
+	}
+
+	.header {
+		&__img {
+			height: 50dvh; // edit
+		}
+	}
+
+	.main {
+		.aboutus {
+			&__card {
+				flex-direction: row;
+				&-img {
+					width: 50%;
+				}
+				&-text {
+					margin-left: 1em;
+				}
+				&-title {
+					padding: 0 0 0.5em 0;
+					font-size: 1.6rem;
+				}
+				&-desc {
+					line-height: 1.5em;
+				}
+			}
+		}
+	}
+
+	.footer {
+		&__logo {
+			margin-right: 4em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+		.logo-text {
+			display: flex;
+			font-size: 2.5rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.main {
+		.aboutus {
+			&__card {
+				&-text {
+					margin-left: 3em;
+					display: flex;
+					flex-direction: column;
+				}
+				&-desc {
+					line-height: 2em;
+					font-size: 1.05rem;
+				}
+			}
+		}
+	}
+}
