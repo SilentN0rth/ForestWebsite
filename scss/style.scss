@@ -12,6 +12,7 @@ html {
 
 body {
 	font-family: 'Raleway', sans-serif;
+	// overflow-y: hidden; .nav--active
 }
 
 .wrapper {
@@ -128,7 +129,7 @@ body {
 		top: 0;
 		right: 0;
 		left: 0;
-		background-image: url('../img/jungle-1807476_1920.jpg');
+		background-image: url('../img/jungle-1807476_640.jpg');
 		background-size: cover;
 		background-position: center;
 		z-index: 5;
@@ -198,7 +199,7 @@ body {
 		}
 	}
 	.info {
-		background-image: url('../img/girl-5785590_1920.jpg');
+		background-image: url('../img/girl-5785590_640.jpg');
 		position: relative;
 		padding: 2em 1em;
 		background-size: cover;
@@ -330,9 +331,6 @@ body {
 
 @media (min-width: 576px) {
 	.main {
-		.offers {
-			// margin: 0;
-		}
 		.info {
 			padding: 5em 1em;
 		}
@@ -403,7 +401,16 @@ body {
 }
 
 @media (min-width: 992px) {
+	.header {
+		&__img {
+			background-image: url('../img/jungle-1807476_1920.jpg');
+		}
+	}
 	.main {
+		.info {
+			background-image: url('../img/girl-5785590_1920.jpg');
+		}
+
 		.aboutus {
 			&__card {
 				&-text {
