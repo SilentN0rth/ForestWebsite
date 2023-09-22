@@ -39,12 +39,18 @@ body {
   border-radius: 7px;
   transition: scale 0.3s, background-color 0.3s, box-shadow 0.3s;
 }
-.btn--active, .btn:hover {
+.btn:hover {
   background-color: #2ade72;
+  scale: 1.05;
+}
+.btn--active {
+  background-color: #2ade72;
+}
+.btn--active:hover {
   box-shadow: 2px 2px 10px 0.5px #2ade72;
 }
-.btn:hover {
-  scale: 1.05;
+.btn--contact {
+  margin-top: 2em;
 }
 
 .nav {
@@ -161,6 +167,11 @@ body {
   text-align: center;
   text-transform: uppercase;
 }
+.main__desc {
+  margin-bottom: 1em;
+  text-align: center;
+  font-size: 1.1rem;
+}
 .main .aboutus {
   display: flex;
   flex-direction: column;
@@ -214,11 +225,6 @@ body {
 }
 .main .offers {
   margin: 0.5em;
-}
-.main .offers__desc {
-  margin-bottom: 1em;
-  text-align: center;
-  font-size: 1.1rem;
 }
 .main .offers__cards {
   display: flex;
@@ -309,6 +315,131 @@ body {
   width: 100%;
 }
 
+.contact {
+  margin: 8em 0 3.5em;
+}
+.contact__info {
+  padding: 1em 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-image: url("../img/california-4053982_640.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px 8px 0 0;
+}
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+.contact__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 1em;
+}
+.contact__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+}
+.contact__icon img {
+  width: 2.3rem;
+}
+.contact__text {
+  text-align: center;
+  color: #f3f3f3;
+}
+.contact__map {
+  position: relative;
+  background-color: #f3f3f3;
+  height: 350px;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden;
+}
+.contact__form {
+  padding: 2em;
+  margin: 2em;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #f3f3f3;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.contact__formbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.contact__img {
+  padding: 13em 0;
+  width: 100%;
+  display: flex;
+  display: none;
+  background-image: url("../img/california-4053982_640.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  transition: scale 0.3s;
+}
+.contact__img:hover {
+  scale: 1.03;
+}
+.contact__field {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__field label {
+  margin: 0.5em 0;
+}
+.contact__field input,
+.contact__field textarea {
+  width: 100%;
+  padding: 0.6em;
+  font-family: sans-serif;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+.contact__field textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+.contact .msg-status {
+  padding: 1em;
+  margin: 0 auto;
+  position: fixed;
+  top: 100px;
+  right: 0;
+  left: 0;
+  width: 90%;
+  border-radius: 8px;
+  z-index: 50;
+  animation: top 0.7s;
+  color: #f3f3f3;
+  text-align: center;
+  font-family: sans-serif;
+  border: 2px solid #111;
+  background-color: #38c129;
+}
+.contact .msg-status__title {
+  margin-bottom: 0.3em;
+  font-size: 1.4rem;
+}
+@keyframes top {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 100px;
+  }
+}
+
 @media (min-width: 576px) {
   .main .info {
     padding: 5em 1em;
@@ -316,6 +447,9 @@ body {
   .main .aboutus__card-title {
     padding: 0.8em 0;
     font-size: 1.3rem;
+  }
+  .main .contact .msg-status {
+    width: 350px;
   }
 }
 @media (min-width: 768px) {
@@ -376,5 +510,11 @@ body {
   .main .aboutus__card-desc {
     line-height: 2em;
     font-size: 1.05rem;
+  }
+  .main .contact__img {
+    display: flex;
+  }
+  .main .contact__field {
+    padding-left: 2em;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -39,7 +39,7 @@
             </div>
         </nav>
     </div>
-    <header class="header">
+    <!-- <header class="header">
         <div class="header__img">
             <div class="header__text">
                 <p class="header__title-p">Forest Group</p>
@@ -47,88 +47,79 @@
             </div>
             <div class="header__shadow"></div>
         </div>
-    </header>
+    </header> -->
     <main class="main">
-        <div class="wrapper">
-            <section class="aboutus" id="aboutus">
-                <h2 class="main__title">O nas</h2>
-                <div class="aboutus__card">
-                    <img class="aboutus__card-img" src="./img/waters-3095682_640.jpg"
-                        alt="Mała wysepka na środku jeziora w lesie, obtoczona mchem, na której rośnie krzew.">
-                    <div class="aboutus__card-text">
-                        <h3 class="aboutus__card-title">Niezapomniane przygody</h3>
-                        <p class="aboutus__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum</p>
+        <section class="contact">
+            <h2 class="main__title">Kontakt</h2>
+            <p class="main__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <div class="wrapper">
+                <div class="contact__box">
+                    <div class="contact__info">
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <img src="./img/icons/map-pin.svg" alt="">
+                            </div>
+                            <div class="contact__text">
+                                <p>ul. Jasnogórska 2</p>
+                                <p>31-000 Kraków</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <img src="./img/icons/phone-call.svg" alt="">
+                            </div>
+                            <div class="contact__text">
+                                <p>+48 000 000 000</p>
+                            </div>
+                        </div>
+                        <div class="contact__item">
+                            <div class="contact__icon">
+                                <img src="./img/icons/mail.svg" alt="">
+                            </div>
+                            <div class="contact__text">
+                                <p>forestGroup@mail.com</p>
+                            </div>
+                        </div>
                     </div>
+                    <div class="contact__map">
+                        <iframe title="mapWithLocalization"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10244.975805237627!2d19.925234743349026!3d50.06299282571415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b10235794ff%3A0xe0ba86c80b8e37ae!2sRestauracja%20McDonald's!5e0!3m2!1spl!2spl!4v1689677747871!5m2!1spl!2spl"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+
+                    </div>
+
                 </div>
-            </section>
-        </div>
-        <div class="info">
-            <div class="info__box">
-                <h2 class="info__box-title">Przygoda dla całej rodziny</h2>
+                <div class="contact__form">
+                    <div class="contact__img"></div>
+                    <form class="contact__formbox">
+                        <div class="contact__field">
+                            <label for="name">Imię:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="contact__field">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="contact__field">
+                            <label for="msg">Wiadomość:</label>
+                            <textarea name="msg" id="msg" required></textarea>
+
+                            <button class="btn btn--active btn--contact"
+                                aria-label="Wyślij formularz kontaktowy">Wyślij</button>
+                        </div>
+
+
+                        <!-- <div class="msg msg-status">
+                            <p class="msg-status__title">Wysłano!</p>
+                            <p class="msg-status__desc">Formularz wysłany prawidłowo!</p>
+                        </div> -->
+                    </form>
+                </div>
             </div>
-            <div class="info__shadow"></div>
-        </div>
-        <div class="wrapper">
-            <section class="offers" id="offers">
-                <h2 class="main__title">Oferty</h2>
-                <p class="offers__desc">Wybierz jedną z naszych wspaniałych ofert!</p>
-                <div class="offers__cards">
-                    <div class="offers__card">
-                        <p class="offers__card-title">Demo</p>
-                        <p class="offers__card-price">$0</p>
-                        <ul class="offers__card-list">
-                            <li class="offers__card-item">
-                                <img src="./img/icons/check.svg" alt=""> Opcja w pakiecie
-                            </li>
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                            <li class="offers__card-item offers__card-item--disabled"><img src="./img/icons/minus.svg"
-                                    alt=""> Opcja poza pakietem</li>
-                            <li class="offers__card-item offers__card-item--disabled"><img src="./img/icons/minus.svg"
-                                    alt=""> Opcja poza pakietem</li>
-                            <li class="offers__card-item offers__card-item--disabled"><img src="./img/icons/minus.svg"
-                                    alt=""> Opcja poza pakietem</li>
-                        </ul>
-                        <button class="btn" aria-label="Wybierz ofertę">Wybierz</button>
-                    </div>
-                    <div class="offers__card">
-                        <p class="offers__card-title">Standard</p>
-                        <p class="offers__card-price">$99</p>
-                        <ul class="offers__card-list">
-                            <li class="offers__card-item">
-                                <img src="./img/icons/check.svg" alt=""> Opcja w pakiecie
-                            </li>
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                            <li class="offers__card-item offers__card-item--disabled"><img src="./img/icons/minus.svg"
-                                    alt=""> Opcja poza pakietem</li>
-                            <li class="offers__card-item offers__card-item--disabled"><img src="./img/icons/minus.svg"
-                                    alt=""> Opcja poza pakietem</li>
-                        </ul>
-                        <button class="btn btn--active" aria-label="Wybierz ofertę">Wybierz</button>
-                    </div>
-                    <div class="offers__card">
-                        <p class="offers__card-title">Premium</p>
-                        <p class="offers__card-price">$299</p>
-                        <ul class="offers__card-list">
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                            <li class="offers__card-item"><img src="./img/icons/check.svg" alt=""> Opcja w pakiecie</li>
-                        </ul>
-                        <button class="btn" aria-label="Wybierz ofertę">Wybierz</button>
-                    </div>
-                </div>
-            </section>
-        </div>
+        </section>
+
     </main>
     <footer class="footer">
         <div class="wrapper">
