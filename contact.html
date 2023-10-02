@@ -39,15 +39,7 @@
             </div>
         </nav>
     </div>
-    <!-- <header class="header">
-        <div class="header__img">
-            <div class="header__text">
-                <p class="header__title-p">Forest Group</p>
-                <h1 class="header__title">Najpiękniejszy park w Twojej okolicy!</h1>
-            </div>
-            <div class="header__shadow"></div>
-        </div>
-    </header> -->
+
     <main class="main">
         <section class="contact">
             <h2 class="main__title">Kontakt</h2>
@@ -95,26 +87,44 @@
                     <div class="contact__img"></div>
                     <form class="contact__formbox">
                         <div class="contact__field">
-                            <label for="name">Imię:</label>
-                            <input type="text" id="name" name="name" required>
+                            <div class="contact__tooltip">
+                                <img src="./img/icons/help-circle.svg" alt="">
+                                <span class="contact__tooltip-text"></span>
+                            </div>
+                            <div class="contact__field-box">
+                                <label for="name">Imię:</label>
+                                <input type="text" id="name" name="name" placeholder="Podaj imie" required>
+                            </div>
                         </div>
                         <div class="contact__field">
-                            <label for="email">Email:</label>
-                            <input type="email" id="email" name="email" required>
+                            <div class="contact__tooltip">
+                                <img src="./img/icons/help-circle.svg" alt="">
+                                <span class="contact__tooltip-text"></span>
+                            </div>
+                            <div class="contact__field-box">
+                                <label for="email">Email:</label>
+                                <input type="email" id="email" name="email" placeholder="Podaj adres email" required>
+                            </div>
                         </div>
                         <div class="contact__field">
-                            <label for="msg">Wiadomość:</label>
-                            <textarea name="msg" id="msg" required></textarea>
+                            <div class="contact__tooltip">
+                                <img src="./img/icons/help-circle.svg" alt="">
+                                <span class="contact__tooltip-text"></span>
+                            </div>
+                            <div class="contact__field-box">
+                                <label for="msg">Wiadomość:</label>
+                                <textarea name="msg" id="msg" placeholder="Wpisz wiadomość" required></textarea>
+                            </div>
 
                             <button class="btn btn--active btn--contact"
                                 aria-label="Wyślij formularz kontaktowy">Wyślij</button>
                         </div>
 
 
-                        <!-- <div class="msg msg-status">
-                            <p class="msg-status__title">Wysłano!</p>
-                            <p class="msg-status__desc">Formularz wysłany prawidłowo!</p>
-                        </div> -->
+                        <div class="contact__popup ">
+                            <p class="contact__popup-title">Wysłano!</p>
+                            <p>Formularz wysłany prawidłowo!</p>
+                        </div>
                     </form>
                 </div>
             </div>
