@@ -58,6 +58,10 @@ body {
 	}
 }
 
+.overflow {
+	overflow: hidden;
+}
+
 .nav {
 	position: fixed;
 	top: 0;
@@ -79,9 +83,9 @@ body {
 			width: 100%;
 			display: flex;
 			flex-direction: column;
-			font-size: 2rem;
 			height: 100vh;
 			.nav__item {
+				font-size: 1.5rem;
 				padding: 0;
 				height: 100%;
 			}
@@ -108,6 +112,7 @@ body {
 		justify-content: center;
 		text-decoration: none;
 		color: $black;
+		letter-spacing: 3px;
 		text-transform: uppercase;
 		transition: color 0.3s, background-color 0.3s;
 		&--active,
@@ -519,9 +524,9 @@ body {
 
 @media (min-width: 768px) {
 	.nav {
-		justify-content: space-evenly;
+		justify-content: center;
 		&__logo {
-			display: flex;
+			display: none;
 		}
 		&__items {
 			display: flex;
@@ -573,6 +578,12 @@ body {
 }
 
 @media (min-width: 992px) {
+	.nav {
+		justify-content: space-around;
+		&__logo {
+			display: flex;
+		}
+	}
 	.header {
 		&__img {
 			background-image: url('../img/jungle-1807476_1920.jpg');

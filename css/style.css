@@ -55,6 +55,10 @@ body {
   margin-top: 2em;
 }
 
+.overflow {
+  overflow: hidden;
+}
+
 .nav {
   position: fixed;
   top: 0;
@@ -78,10 +82,10 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
   height: 100vh;
 }
 .nav--active .nav__items .nav__item {
+  font-size: 1.5rem;
   padding: 0;
   height: 100%;
 }
@@ -103,6 +107,7 @@ body {
   justify-content: center;
   text-decoration: none;
   color: #111;
+  letter-spacing: 3px;
   text-transform: uppercase;
   transition: color 0.3s, background-color 0.3s;
 }
@@ -477,10 +482,10 @@ body {
 }
 @media (min-width: 768px) {
   .nav {
-    justify-content: space-evenly;
+    justify-content: center;
   }
   .nav__logo {
-    display: flex;
+    display: none;
   }
   .nav__items {
     display: flex;
@@ -519,6 +524,12 @@ body {
   }
 }
 @media (min-width: 992px) {
+  .nav {
+    justify-content: space-around;
+  }
+  .nav__logo {
+    display: flex;
+  }
   .header__img {
     background-image: url("../img/jungle-1807476_1920.jpg");
   }
