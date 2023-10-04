@@ -1,0 +1,32 @@
+.main .offers__card:nth-child(5) {
+  grid-row: 5/6;
+}
+.main .offers__card:nth-child(6) {
+  grid-row: 6/7;
+}
+
+@media (min-width: 768px) {
+  .main .offers__card:nth-child(5), .main .offers__card:nth-child(6) {
+    grid-row: 3/4;
+  }
+  .main .offers__card:nth-child(5) {
+    grid-column: 1/2;
+  }
+  .main .offers__card:nth-child(6) {
+    grid-column: 2/3;
+  }
+}
+@media (min-width: 992px) {
+  .main .offers__card:nth-child(5), .main .offers__card:nth-child(6) {
+    grid-row: 2/3;
+  }
+  .main .offers__card:nth-child(4) {
+    grid-column: 1/2;
+  }
+  .main .offers__card:nth-child(5) {
+    grid-column: 2/3;
+  }
+  .main .offers__card:nth-child(6) {
+    grid-column: 3/4;
+  }
+}/*# sourceMappingURL=offers.css.map */

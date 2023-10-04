@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Meta tagi -->
-    <title>Forest Website</title>
+    <title>Forest Website | Contact</title>
     <meta name="description" content="Strona Forest Group">
     <meta name="keywords" content="forestWeb, forest, forestGroup">
     <!-- Google Fonts -->
@@ -13,15 +13,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/offers.css">
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9b1d21b601.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="wrapper">
-        <nav class="nav ">
+        <nav class="nav">
             <div class="nav__logo">
-                <a href="#" class="logo-text"><svg width="44" height="40" viewBox="0 0 24 24"
+                <a href="./index.html" class="logo-text"><svg width="44" height="40" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <g fill="none">
                             <path
@@ -32,10 +33,11 @@
                     </svg>Forest</a>
             </div>
             <div class="nav__items">
-                <a href="#" class="nav__item nav__item--active">Home</a>
-                <a href="#aboutus" class="nav__item">O nas</a>
-                <a href="./offers.html" class="nav__item">Oferty</a>
+                <a href="./index.html#" class="nav__item nav__item--active">Home</a>
+                <a href="./index.html#aboutus" class="nav__item">O nas</a>
+                <a href="#" class="nav__item">Oferty</a>
                 <a href="./contact.html" class="nav__item">Kontakt</a>
+
             </div>
             <div class="nav__hamburger">
                 <button class="nav__hamburger-btn" aria-label="Show navigation"><i
@@ -43,45 +45,11 @@
             </div>
         </nav>
     </div>
-    <header class="header">
-        <div class="header__img">
-            <div class="header__text">
-                <p class="header__title-p">Forest Group</p>
-                <h1 class="header__title">Najpiękniejszy park w Twojej okolicy!</h1>
-            </div>
-            <div class="header__shadow"></div>
-        </div>
-    </header>
+
     <main class="main">
-        <div class="wrapper">
-            <section class="aboutus" id="aboutus">
-                <h2 class="main__title">O nas</h2>
-                <div class="aboutus__card">
-                    <img class="aboutus__card-img" src="./img/waters-3095682_640.jpg"
-                        alt="Mała wysepka na środku jeziora w lesie, obtoczona mchem, na której rośnie krzew.">
-                    <div class="aboutus__card-text">
-                        <h3 class="aboutus__card-title">Niezapomniane przygody</h3>
-                        <p class="aboutus__card-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                            do
-                            eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                            commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum</p>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <div class="info">
-            <div class="info__box">
-                <h2 class="info__box-title">Przygoda dla całej rodziny</h2>
-            </div>
-            <div class="info__shadow"></div>
-        </div>
-        <div class="wrapper">
-            <section class="offers" id="offers">
+        <section class="offers" id="offers">
+            <div class="wrapper">
+                <div class="margin"></div>
                 <h2 class="main__title">Oferty</h2>
                 <p class="main__desc">Wybierz jedną z naszych wspaniałych ofert!</p>
                 <div class="offers__cards">
@@ -94,6 +62,31 @@
                             </li>
                             <li class="offers__card-item offers__card-item--disabled">
                                 <img src="./img/icons/minus.svg" width="16" height="16" alt=""> Opcja poza pakietem
+                            </li>
+                            <li class="offers__card-item offers__card-item--disabled">
+                                <img src="./img/icons/minus.svg" width="16" height="16" alt=""> Opcja poza pakietem
+                            </li>
+                            <li class="offers__card-item offers__card-item--disabled">
+                                <img src="./img/icons/minus.svg" width="16" height="16" alt=""> Opcja poza pakietem
+                            </li>
+                            <li class="offers__card-item offers__card-item--disabled">
+                                <img src="./img/icons/minus.svg" width="16" height="16" alt=""> Opcja poza pakietem
+                            </li>
+                            <li class="offers__card-item offers__card-item--disabled">
+                                <img src="./img/icons/minus.svg" width="16" height="16" alt=""> Opcja poza pakietem
+                            </li>
+                        </ul>
+                        <button class="btn" aria-label="Wybierz ofertę">Wybierz</button>
+                    </div>
+                    <div class="offers__card">
+                        <p class="offers__card-title">Basic</p>
+                        <p class="offers__card-price">$25</p>
+                        <ul class="offers__card-list">
+                            <li class="offers__card-item">
+                                <img src="./img/icons/check.svg" width="16" height="16" alt=""> Opcja w pakiecie
+                            </li>
+                            <li class="offers__card-item">
+                                <img src="./img/icons/check.svg" width="16" height="16" alt=""> Opcja w pakiecie
                             </li>
                             <li class="offers__card-item offers__card-item--disabled">
                                 <img src="./img/icons/minus.svg" width="16" height="16" alt=""> Opcja poza pakietem
@@ -161,6 +154,31 @@
                         <button class="btn" aria-label="Wybierz ofertę">Wybierz</button>
                     </div>
                     <div class="offers__card">
+                        <p class="offers__card-title">Premium</p>
+                        <p class="offers__card-price">$250</p>
+                        <ul class="offers__card-list">
+                            <li class="offers__card-item">
+                                <img src="./img/icons/check.svg" width="16" height="16" alt=""> Opcja w pakiecie
+                            </li>
+                            <li class="offers__card-item">
+                                <img src="./img/icons/check.svg" width="16" height="16" alt=""> Opcja w pakiecie
+                            </li>
+                            <li class="offers__card-item">
+                                <img src="./img/icons/check.svg" width="16" height="16" alt=""> Opcja w pakiecie
+                            </li>
+                            <li class="offers__card-item">
+                                <img src="./img/icons/check.svg" width="16" height="16" alt=""> Opcja w pakiecie
+                            </li>
+                            <li class="offers__card-item">
+                                <img src="./img/icons/check.svg" width="16" height="16" alt=""> Opcja w pakiecie
+                            </li>
+                            <li class="offers__card-item offers__card-item--disabled">
+                                <img src="./img/icons/minus.svg" width="16" height="16" alt=""> Opcja poza pakietem
+                            </li>
+                        </ul>
+                        <button class="btn" aria-label="Wybierz ofertę">Wybierz</button>
+                    </div>
+                    <div class="offers__card">
                         <p class="offers__card-title">Enterprise</p>
                         <p class="offers__card-price">$350</p>
                         <ul class="offers__card-list">
@@ -185,18 +203,16 @@
                         </ul>
                         <button class="btn" aria-label="Wybierz ofertę">Wybierz</button>
                     </div>
-
                 </div>
-                <a class="btn btn--offers" aria-label="Wybierz ofertę" type="button" href="./offers.html">Zobacz
-                    więcej</a>
-            </section>
-        </div>
+            </div>
+        </section>
     </main>
+    <div class="margin-3"></div>
     <footer class="footer">
         <div class="wrapper">
             <div class="footer__info">
                 <div class="footer__logo">
-                    <a href="#" class="logo-text"><svg width="44" height="40" viewBox="0 0 24 24"
+                    <a href="./index.html" class="logo-text"><svg width="44" height="40" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <g fill="none">
                                 <path
@@ -231,6 +247,7 @@
         </div>
     </footer>
     <script src="./js/script.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 
 </html>

@@ -54,9 +54,24 @@ body {
   width: 250px;
   margin-top: 2em;
 }
+.btn--offers {
+  display: block;
+  margin: 1.5em auto;
+  text-align: center;
+  text-decoration: none;
+  color: #111;
+  width: 200px;
+}
 
 .overflow {
   overflow: hidden;
+}
+
+.margin {
+  margin-top: 7em;
+}
+.margin-3 {
+  margin-top: 3em;
 }
 
 .nav {
@@ -234,12 +249,12 @@ body {
   margin: 0.5em;
 }
 .main .offers__cards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(4, 1fr);
 }
 .main .offers__card {
-  width: 280px;
+  grid-column: 1/2;
   margin: 1em;
   padding: 2em;
   text-align: center;
@@ -247,6 +262,18 @@ body {
   box-shadow: 1px 1px 7px -3px rgb(12, 12, 15);
   border-radius: 7px;
   transition: scale 0.3s;
+}
+.main .offers__card:nth-child(1) {
+  grid-row: 1/2;
+}
+.main .offers__card:nth-child(2) {
+  grid-row: 2/3;
+}
+.main .offers__card:nth-child(3) {
+  grid-row: 3/4;
+}
+.main .offers__card:nth-child(4) {
+  grid-row: 4/5;
 }
 .main .offers__card:hover {
   scale: 1.05;
@@ -512,6 +539,28 @@ body {
   .main .aboutus__card-desc {
     line-height: 1.5em;
   }
+  .main .offers__cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .main .offers__card:nth-child(1), .main .offers__card:nth-child(2) {
+    grid-row: 1/2;
+  }
+  .main .offers__card:nth-child(3), .main .offers__card:nth-child(4) {
+    grid-row: 2/3;
+  }
+  .main .offers__card:nth-child(1) {
+    grid-column: 1/2;
+  }
+  .main .offers__card:nth-child(2) {
+    grid-column: 2/3;
+  }
+  .main .offers__card:nth-child(3) {
+    grid-column: 1/2;
+  }
+  .main .offers__card:nth-child(4) {
+    grid-column: 2/3;
+  }
   .footer__logo {
     margin-right: 4em;
     display: flex;
@@ -536,7 +585,11 @@ body {
   .main .info {
     background-image: url("../img/girl-5785590_1920.jpg");
   }
+  .main .aboutus__card {
+    width: 100%;
+  }
   .main .aboutus__card-text {
+    width: 50%;
     margin-left: 3em;
     display: flex;
     flex-direction: column;
@@ -544,6 +597,28 @@ body {
   .main .aboutus__card-desc {
     line-height: 2em;
     font-size: 1.05rem;
+  }
+  .main .offers__cards {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .main .offers__card:nth-child(1), .main .offers__card:nth-child(2), .main .offers__card:nth-child(3) {
+    grid-row: 1/2;
+  }
+  .main .offers__card:nth-child(4) {
+    grid-row: 2/3;
+  }
+  .main .offers__card:nth-child(1) {
+    grid-column: 1/2;
+  }
+  .main .offers__card:nth-child(2) {
+    grid-column: 2/3;
+  }
+  .main .offers__card:nth-child(3) {
+    grid-column: 3/4;
+  }
+  .main .offers__card:nth-child(4) {
+    grid-column: 2/3;
   }
   .main .contact__img {
     display: flex;
